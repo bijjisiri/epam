@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            
+        }
+        #nav{
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            position: relative;
+            bottom: 575px;
+            position: fixed;
+            z-index: 5;
+        }
+        #nav>div{
+            
+            font-family: sans-serif;
+            width: 750px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 35px;
+            padding-left: 40px;
+        }
+        #nav>div>a{
+            font-family: sans-serif;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        #navbutton{
+            font-family: sans-serif;
+            background-color: black; 
+            width: 150px;
+            height: 40px;
+            border-radius: 20px; 
+            border-bottom-right-radius: 0px;
+            position: relative;
+            bottom: 15px;
+            font-size: 17px;
+        }
+        #navbutton>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        #d1{
+            height: 650px;
+            width: 800px;
+            position: relative;
+            left: 45%;
+            top: -100px;
+            border-radius: 50%;
+            border-top-right-radius:0px ;
+            border-bottom-right-radius: 0px;
+            transform: rotate(-45deg);
+            background-color: rgb(243, 208, 10);
+            z-index: -1;
+        }
+        #img1{
+            height: 530px;
+            width: 750px;
+            position: relative;
+            bottom: 570px;
+            left: 520px;
+            
+        }
+        #d2{
+            font-family: sans-serif;
+            line-height: 30px;
+            font-size: 20px;
+            position: relative;
+            top:-1025px;
+            left: 100px;
+        }
+        #d2>p{
+            color: rgb(83, 72, 72);
+        }
+        #d3{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #d3button1{
+            background-color: rgb(237, 183, 47);
+            border: none;
+            height: 50px;
+            width: 180px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 30px;
+            border-bottom-left-radius: 0px;
+        }
+        #d3button2{
+            background-color: black;
+            color: white;
+            border: none;
+            height: 50px;
+            width: 180px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 30px;
+            border-bottom-right-radius: 0px;
+        }
+        #d4{
+            width: 750px;
+            height: 550px;
+            background-color: rgb(253, 242, 244);
+            border-radius: 160px;
+            position: relative;
+            bottom: 800px;
+            left: -100px;
+            transform: rotate(-25deg);
+        }
+        #img2{
+            height: 250px;
+            width: 160px;
+            border-radius: 100px;
+            border-bottom-right-radius: 10px;
+            position: relative;
+            bottom: 1350px;
+            left: 200px;
+        }
+        #img3{
+            height: 380px;
+            width: 250px;
+            border-radius: 100px;
+            border-top-left-radius: 10px;
+            position: relative;
+            bottom: 1050px;
+            left: 200px;
+        }
+        #mini1{
+            height: 200px;
+            width: 50px;
+            background-color: rgb(255, 217, 0);
+            border-radius: 50px;
+            border-top-right-radius: 10px;
+            position: relative;
+            bottom: 1310px;
+            left: 305px;
+        }
+        #mini2{
+           
+            height: 40px;
+            width: 130px;
+            background-color: white;
+            border-radius: 50px;
+            border-bottom-left-radius: 10px;
+            position: relative;
+            bottom: 1750px;
+            left: 370px;
+        }
+        #d5{
+            width: 500px;
+            font-family: sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+            position: relative;
+            bottom: 1920px;
+            left: 700px;
+        }
+        #d5>p{
+            color: gray;
+        }
+        #d6{
+            width: 1000px;
+            height: 540px;
+            background-color: rgb(253, 242, 244);
+            border-radius: 400px;
+            position: relative;
+            bottom: 1600px;
+            left: 210px;
+            transform: rotate(-18deg);
+        }
+        #d7{
+            text-align: center;
+            transform: rotate(18deg);
+            width: 900px;
+            font-size: 20px;
+            position: relative;
+            left: 50px;
+            top: 70px;
+        }
+        #d7>div{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            left: 10px;
+        }
+        #imgdiv{
+            background-color: white;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+        #imgdiv>img{
+            position: relative;
+            top: 10px;
+        }
+        #d8{
+            font-family: sans-serif;
+            width: 1100px;
+            text-align: center;
+            position: relative;
+            left: 130px;
+            bottom: 1450px;
+            
+        }
+        #d9{
+            display: flex;
+            justify-content: space-between;
+        }
+        #d9>div{
+            line-height: 28px;
+        }
+        #d9>div>p>b{
+            font-size: 20px;
+            color: black;
+        }
+        #d9>div>p{
+            color: gray;
+        }
+        #d8button1{
+            color: black;
+            border: none;
+            height: 40px;
+            width: 180px;
+            border-top-left-radius: 20px;
+            background-color: rgb(244, 209, 57);
+        }
+        #d8button2{
+            border: none;
+            color: black;
+            height: 40px;
+            width: 180px;
+            border-bottom-right-radius: 20px;
+        }
+        #d10{
+            width: 1100px;
+            height: 550px;
+            background-color: rgb(246, 245, 245);
+            border-top-right-radius: 150px;
+            border-bottom-right-radius: 20px;
+            position: relative;
+            bottom: 1350px;
+        }
+        #d11{
+            font-family: sans-serif;
+            width: 800px;
+            text-align: center;
+            position: absolute;
+           left: 300px;    
+        }
+        #d12{
+            width: 850px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 180px;
+            left: 280px;
+        }
+        #d12>div{
+            width: 400px;
+            height: 250px;
+            background-color: white;
+            border-radius: 60px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 2px 2px 2px 0.2px;
+        }
+        #d12>div>img{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            border-radius: 20px;
+            border-bottom-right-radius: 10px;
+        }
+        #d12>div>p{
+            font-family: sans-serif;
+            margin-left: 95px;
+            margin-top: -10px;
+            font-size: 15px;
+        }
+        #d13{
+            text-align: left;
+            width: 500px;
+            font-family: sans-serif;
+            line-height: 27px;
+            font-size: 18px;
+            position: relative;
+            bottom: 1150px;
+            left: 100px;
+        }
+        #d13>p{
+            color: gray;
+        }
+        #d14{
+            width: 850px;
+            height: 500px;
+            background-color: rgb(245, 235, 221);
+            border-radius: 200px;
+            transform: rotate(20deg);
+            position: relative;
+            left: 600px;
+            bottom: 1500px;
+        }
+        #d14img{
+            border-radius: 100px;
+            border-bottom-right-radius: 10px;
+            position: relative;
+            left: 800px;
+            bottom: 2100px;
+        }
+        #d14img1{
+            border-radius: 100px;
+            border-top-left-radius: 10px;
+            position: relative;
+            left: 800px;
+            bottom: 1800px;
+        }
+        #mini3{
+            height: 200px;
+            width: 50px;
+            background-color: rgb(255, 217, 0);
+            border-radius: 50px;
+            border-top-right-radius: 10px;
+            position: relative;
+            bottom: 2080px;
+            left: 935px;
+        }
+        footer{
+            width: 100%;
+            background-color: black;
+            height: 400px;
+            position: relative;
+            bottom: 1900px;
+            color: white;
+            padding-top: 50px;
+        }
+        #d16{
+            font-family: sans-serif;
+            line-height: 17px;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body  >
+    <br>
+    <div id="nav">
+        <img src="./image/logo.svg" alt="" height="70px" width="90px">
+        <div>
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Safety</a>
+            <a href="">Careers</a>
+            <a href="">Blog</a>
+            <a href="">Press</a>
+            <a href="">Contact us</a><a href=""></a>
+            <button id="navbutton"><a href="">Download App</a></button>
+        </div>
+    </div>
+
+    <div id="d1">    
+    </div>
+    <img src="./image/carbike.webp" alt="" id="img1">
+    <div id="d2">
+        <h1>Bharat moves on <br><br>
+            Rapido!</h1>
+            <p>Rapido, with Bike-Taxis, Autos & Cabs is <br>
+                revolutionising the way India travels. With <br>
+                 a presence in 150+ cities and over 100 <br>
+                 million safe rides completed, Rapido is <br>
+                  becoming India’s go-to app for comfortable <br> and affordable rides.
+            </p>
+
+        <div id="d3">
+            <button id="d3button1">Download Rapido</button>
+            <button id="d3button2">Sign-up as Driver</button>
+        </div>    
+    </div>
+
+    <img src="./image/safety_guideline.png" alt="" width="1150px" height="450px" style="padding-left: 55px; position: relative; bottom: 850px  ;">
+    <br><br><br>
+
+    <div id="d4">
+    </div>
+    <img src="./image/who_we_1.webp" alt="" id="img2">
+    <img src="./image/who_we_2.webp" alt="" id="img3">
+
+    <div id="mini1"></div>
+    <div id="mini2"></div>
+
+    <div id="d5">
+        <h1>Know Us Better</h1>
+        <hr style="background-color: yellow; height: 3px; width: 55px; position: relative; right: 220px;" >
+        <p>In 2017, Rapido started out by pioneering the <br>
+             concept of Bike-Taxi for India and today <br>
+             dominates the market with a staggering 70% <br>
+             market share. With a vision to empower India <br>
+             to move, we have been taking significant <br>
+             strides. Today we are a name to reckon with, in <br>
+             app based auto services and are making a <br>
+             strong foothold in the Cab market and intra-city <br>
+             delivery with Rapido Parcel.</p>
+             <button id="d3button1">Read more here</button>
+    </div>
+
+    <div id="d6">
+        <div id="d7">
+            <h1>Our Impact</h1>
+            <hr style="background-color: yellow; height: 3px; width: 55px; " >
+            <p >Our presence in the country has changed the concept of intra-city travel and made <br>
+                 last-mile connectivity affordable for all.</p>
+                <div>
+                    <div  id="imgdiv"> <img src="./image/presence_1.webp" alt="">
+                    <p><b>25 M</b>
+                      <br>Downloads</p></div>
+                    <div id="imgdiv"><img src="./image/presence_2.webp" alt="">
+                        <p><b>100+</b>
+                            <br>Cities</p></div>
+                    <div id="imgdiv"><img src="./image/presence_3.webp" alt="">
+                        <p><b>1+ M</b>
+                            <br>Captians</p></div>
+                    <div id="imgdiv"><img src="./image/presence_4.webp" alt="">
+                        <p><b>10+ M</b>
+                            <br>Customers</p></div>
+                </div>
+        </div>
+    </div>
+
+    <div id="d8">
+        <h1>What's in it for you</h1>
+        <hr style="background-color: yellow; height: 3px; width: 55px; position: relative; bottom: 10px; " >
+        <br>
+        <button id="d8button1">Customers</button>
+        <button id="d8button2">Captians</button>
+        <br><br><br>
+        <div id="d9">
+            <div><img src="./image/Bike.webp" alt="" height="150px" width="180px">
+            <p><b>India’s largest Bike-Taxi</b><br><br>
+                Cut through traffic, reach on time and save <br>
+                 money. With Rapido Bike-Taxis, it’s that <br>
+                 simple.</p></div>
+            <div><img src="./image/Auto.webp" alt="" height="150px" width="180px">
+                <p><b>5-minute Auto</b><br><br>
+                    Never wait for an auto ride again! Get a <br>
+                    Rapido Auto within just 5 minutes! Anytime. <br>
+                    Anywhere.</p></div>
+            <div><img src="./image/Cab.webp" alt="" height="150px" width="180px">
+                <p><b>Lowest Priced Cabs</b><br><br>
+                    More wheels. More comfort. And lower price than <br>
+                    any other cab out there.</p></div>
+                </div>     
+        </div>
+    
+        <div id="d10">
+            <br>
+            <br>
+            <div id="d11">
+                <h1>Straight from the Customer's heart</h1>
+                <hr style="background-color: yellow; height: 3px; width: 55px; position: relative; bottom: 10px; " >
+                <br>
+                <button id="d8button1">Customers</button>
+                <button id="d8button2">Captians</button>
+            </div>
+
+            <div id="d12">
+                <div><img src="./image/hero.png" alt="" height="65px" width="65px"><br>
+                    <p> Its is an amazing app and very safe too to <br>
+                  ride with as they professional and <br>
+                  great riders. it is also very feasible and we <br>
+                  reach quicker compared to any other <br>
+                  mode of transport.  <br><br>
+                  sirram <br>
+                  custromer
+                </p></div>
+                <div><img src="./image/zero.png" alt="" height="80px" width="65px"><br>
+                    <p> Its is an amazing app and very safe too to <br>
+                        ride with as they professional and <br>
+                        great riders. it is also very feasible and we <br>
+                        reach quicker compared to any other <br>
+                        mode of transport.  <br><br>
+                        sirram <br>
+                        custromer
+                      </p></div>
+            </div>
+        </div>
+   
+        <div id="d13">
+            <h1>Rapido Business Solutions</h1>
+            <hr style="background-color: yellow; height: 3px; width: 55px; position: relative; bottom: 10px; left: -200px; " >
+            
+            <p>
+                Get onboard with Rapido B2B services to earn <br>
+                more while you deliver. With highly reliable <br>
+                 deliveries and a strong customer base, we are <br>
+                 one of the fastest growing networks in <br>
+                 the country. Sign up as a Rapido Partner for on-time <br>
+                 services.        
+            </p>
+        </div>
+
+        <div id="d14">
+
+        </div>
+        <img src="./image/Rapido4business1 (1).png" alt="" id="d14img">
+        <img src="./image/Rapido4business2.png" alt="" id="d14img1">
+        <div id="mini3"></div>
+
+        <footer>
+            <div id="d16">
+                <div><b>Customer app</b><br><br>
+                    <img src="./image/play_store.svg" alt=""><br>
+                    <img src="./image/app_store.svg" alt="">
+                    </div>
+        
+                    <div><b>Captain app</b><br><br>
+                    <img src="./image/play_store.svg" alt="">
+                    </div>
+        
+                    <div>Home <br>
+                        About Us <br>
+                        Safety <br>
+                        Careers <br>
+                        Privacy Policy
+                    </div>
+        
+                    <div>Customer <br>
+                         Terms <br>
+                          - Bike Taxi <br>
+                        Customer <br><br>
+                        Terms - <br>
+                        Cabs and <br>
+                        Auto <br><br>
+                        Corporate <br>
+                         Affairs
+                    </div>
+        
+                    <div>Customer <br>
+                        Terms <br>
+                        - Bike <br>
+                        Taxi <br>
+                        Customer <br><br>
+                        Terms - <br>
+                        Cabs <br>
+                         and <br>
+                        Auto <br><br>
+                        Blog <br>
+                        press
+                    </div>
+        
+                    <div><b>follow us</b></div>
+        
+            </div>
+            <br>
+            <hr style="width: 1000px;">
+            <p align="center">© 2024 Roppen Transportation. All rights reserved.</p>
+        </footer>
+</body>
+</html>
